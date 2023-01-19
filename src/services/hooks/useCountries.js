@@ -3,7 +3,7 @@ import { getCountries } from '../Countries.js';
 
 export default function useCountries() {
   const [countries, setCountries] = useState([]);
-  const [error, setError] = useState('null');
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
