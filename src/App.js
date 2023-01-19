@@ -1,9 +1,13 @@
+import React from 'react';
 import './App.css';
-import { getCountries } from './services/Countries.js';
+import Main from './components/main/Main.js';
 
 function App() {
-  getCountries();
-  return <div className="App">App</div>;
+  return (
+    <section className="main">
+      <Main />
+    </section>
+  );
 }
 
 export default App;
