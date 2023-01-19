@@ -3,12 +3,19 @@
   flex-wrap: wrap;
 }
 
+.header-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .countryCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 15px;
-  flex-wrap: wrap;
   width: 150px;
 }

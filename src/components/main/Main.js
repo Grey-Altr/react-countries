@@ -14,16 +14,18 @@ export default function Main() {
 
   return (
     <main className="container">
-      <h1>Flags of the World</h1>
-      <select onChange={(e) => setContinent(e.target.value)}>
-        <option value="all">all</option>
-        {continents.map((continent) => (
-          <option key={continent} value={continent}>
-            {continent}
-          </option>
-        ))}
-      </select>
-      <p style={{ color: 'red' }}>{error}</p>
+      <div className="header-filter">
+        <h1>Flags of the World</h1>
+        <select onChange={(e) => setContinent(e.target.value)}>
+          <option value="all">all</option>
+          {continents.map((continent) => (
+            <option key={continent} value={continent}>
+              {continent}
+            </option>
+          ))}
+        </select>
+        <p style={{ color: 'red' }}>{error}</p>
+      </div>
       {filtered.map((country) => (
         <CountryCard key={country.id} {...country} />
       ))}
