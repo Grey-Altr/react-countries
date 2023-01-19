@@ -4,7 +4,7 @@ export default function countryCard({ name, iso2 }) {
   return (
     <div className="countryCard">
       <h3 className="name">{name}</h3>
-      <img src={`https://flagcdn.com/120x90/${iso2.toLowerCase()}.png`} />
+      <img src={`https://flagcdn.com/84x63/${iso2.toLowerCase()}.png`} />
     </div>
   );
 }
